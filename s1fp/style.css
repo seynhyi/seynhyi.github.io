@@ -1,0 +1,119 @@
+html {
+    padding:10px;
+}
+
+/*create a continuous animation of the background*/
+body {
+    animation: 10000ms ease-in-out infinite color-change;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: #aa0000;
+    }
+    20% {
+        background-color: indianred;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+      background-color: gold;
+    }
+    80% {
+      background-color: yellowgreen;
+    }
+    95% {
+      background-color: green;
+    }
+    100% {
+        background-color: brown;
+    }
+  }
+/* general details of the animation*/
+.typinganimation {
+    margin-left: calc(50vw - 123px);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    animation: typing 5s steps(15), blink 0.4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 22px;
+  }
+  
+
+  @keyframes typing {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 100px;
+    }
+  }
+  
+/*create a typing/blink effect*/
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+/* unvisited link */
+  a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* hover link */
+  a:hover {
+    color: red;
+     /*change the cursor to the aya adinkra everytime you hover on a link*/
+    cursor: url('aya_adinkra.png'), auto;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  } 
+
+  /* style for adinkra iframe*/ 
+  #adinkra {
+    width: 80%;
+    height: 200px;
+    border-top:4px solid #aa0000;
+    border-left:4px solid #ffea00;
+    border-bottom:4px solid #008000;
+    margin-left: calc(10% - 2px);
+  }
+
+  #table {
+    border: 1px solid black;
+  }
+/* center grid*/
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*create text entry box at the top of the page*/
+  input[type=text]{
+    width:20%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+  /*add highlight to box when you click inside*/
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
