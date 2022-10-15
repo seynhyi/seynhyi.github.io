@@ -149,7 +149,7 @@ body {
 
   /*link to Wenxi's website*/
   .redirect {
-    background-image: linear-gradient(to right, red, green);
+    background-image: linear-gradient(to right, red, yellow);
     border-radius: 5px;
     padding-left: 15px ;
     width: 150px;
