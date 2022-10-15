@@ -137,12 +137,12 @@ body {
     font-size: 25;
   }
 
-  /*aligh the image to remain on the left*/
+  /*align the image to remain on the left*/
   .left {
     float: left;
   }
 
-   /*aligh text to remain on the right*/
+   /*align text to remain on the right*/
   .textright {
     float: right;
   }
