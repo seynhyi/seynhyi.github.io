@@ -1,0 +1,154 @@
+  html {
+    padding:30px;
+  }
+
+  body {
+    background-image: url("phil.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  h2 {
+    text-decoration: line-through;
+    font-size: 15px;
+  }
+
+  img.size_image {
+    width: 50vw;
+    height: 40vh auto;
+  }
+
+  .img_desc {
+    text-align: center;
+  }
+
+  div.sticky_h1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 3px;
+    background-image: radial-gradient(white, #89CFF0);
+    border: 2px solid #4CAF50;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .line_height {
+    line-height: 20%;
+  }
+
+  div.sticky_img {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border: 2px solid #4CAF50;
+    text-align: center;
+    z-index: 1;
+  }
+
+  #transparency:hover img {
+    opacity: .5;  
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40vh auto;
+    width: 50vw;
+    opacity: 0;
+    transition: .5s ease;;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .poll_text {
+    color: white;
+
+  }
+
+  .choice {
+    height: 400px;
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .result {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .bar {
+    height: 0%;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .bar[data-choice="1"] {
+    background-color: red;
+  }
+  
+  .bar[data-choice="2"] {
+    background-color: yellow;
+  }
+  
+  .bar[data-choice="3"] {
+    background-color: blue;
+  }
+  
+  .label {
+    height: 70px;
+    text-align: center;
+  }
+
+  tr.sticky_scroll {
+    position: sticky;
+    top: 150;
+    left: 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  #highlight:active p{
+    background-color: white;
+    border-radius: 10%;
+  }
+  .imageroweven {
+    background-color: #ccc;
+  }
+  
+  .imagerowodd {
+    background-color: #eee;
+  }
+
+  .imageroweven, .imagerowodd {
+    position: sticky;
+    top: 150;
+    left: 0;
+    width: 100vw;
+    height: auto;
+  }
