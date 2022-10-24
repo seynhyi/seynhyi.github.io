@@ -14,12 +14,19 @@
   }
 
   img.size_image {
-    width: 45vw;
-    height: 35vh auto;
+    width: 50vw;
+    height: 40vh auto;
   }
 
   .img_desc {
-    text-align: center;
+    color: white;
+    line-height: 2;
+    font-size: large;
+  }
+
+  .img_d {
+    line-height: 2;
+    font-size: large;
   }
 
   div.sticky_h1 {
@@ -84,47 +91,6 @@
     text-align: center;
   }
 
-  .poll_text {
-    color: white;
-
-  }
-
-  .choice {
-    height: 400px;
-    display: inline-block;
-    width: 100px;
-  }
-  
-  .result {
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  .bar {
-    height: 0%;
-    width: 70%;
-    margin: 0 auto;
-  }
-  
-  .bar[data-choice="1"] {
-    background-color: red;
-  }
-  
-  .bar[data-choice="2"] {
-    background-color: yellow;
-  }
-  
-  .bar[data-choice="3"] {
-    background-color: blue;
-  }
-  
-  .label {
-    height: 70px;
-    text-align: center;
-  }
-
   tr.sticky_scroll {
     position: sticky;
     top: 150;
@@ -133,22 +99,24 @@
     height: auto;
   }
 
-  #highlight:active p{
-    background-color: white;
-    border-radius: 10%;
-  }
-  .imageroweven {
-    background-color: #ccc;
+  .imagerow1 {
+    background-color: #730716;
   }
   
-  .imagerowodd {
+  .imagerow2 {
     background-color: #eee;
   }
 
-  .imageroweven, .imagerowodd {
+  .imagerow1, .imagerow2 {
     position: sticky;
     top: 150;
     left: 0;
     width: 100vw;
-    height: auto;
+    height: auto ;
+    overflow: scroll;
+  }
+
+  .drop-down_menu {
+    position: relative;
+    display: inline-block;
   }
