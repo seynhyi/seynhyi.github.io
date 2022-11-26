@@ -1,0 +1,36 @@
+html {
+    padding: 20px;
+}
+
+body {
+    background-color: #B7B7F1;
+}
+
+.box_back {
+    background: ghostwhite; 
+    font-size: 21x;
+    text-align: center;
+    padding: 70px; 
+    border: 1px solid black; 
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    color: blueviolet;
+}
+a:link {
+    color: blueviolet;
+}
+
+a:hover {
+    color : black;
+}
+
+a:visited {
+    color: green;
+}
+
