@@ -48,9 +48,9 @@ h1 {
 }
 
 .pitch {
-    height: 40vh;
+    height: 275px;
     overflow: scroll;
-    width: 40vw;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
