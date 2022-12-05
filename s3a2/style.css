@@ -1,1 +1,110 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-image: linear-gradient(to bottom, #d86b93, white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+h1 {
+    margin-top: 1.5em;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.postcard {
+    width: 800px;
+    height: 500px;
+    background-color: #f7f7f7;
+    margin: auto;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3em;
+    box-shadow: .8em .8em 15px rgba(0, 0, 0, .3);
+    -ms-transform: rotate(2.5deg); /* IE 9 */
+    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(2.5deg);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.postcard:hover,
+.postcard:active,
+.postcard:focus {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.pitch {
+    height: 275px;
+    overflow: scroll;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.download {
+    margin-top: 6em;
+}
+
+.mail_stamp {
+    width: 125px;
+    float: right;
+}
+
+footer {
+    margin: 1em auto;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background: #ab2434;
+    color: #f7f7f7;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+
+    .postcard {
+        width: 90%;
+        height: max-content;
+        overflow-wrap: break-word;
+        padding: 2em;
+    }
+
+    .pitch {
+        width: 100%;
+        height: max-content;
+        padding: 1em;
+    }
+
+    .mail_stamp {
+        display: none;
+    }
+
+    .download {
+        border-top: 1px solid black;
+        margin-top: 1.5em;
+        padding-top: 1.5em;
+    }
+}
