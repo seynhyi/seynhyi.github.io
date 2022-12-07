@@ -1,0 +1,101 @@
+html {
+    padding:10px;
+}
+
+/* background color */
+body {
+    animation: 10000ms ease-in-out infinite color-change;
+}
+  
+@keyframes color-change {
+    0% {
+      background-color: #aa0000;
+    }
+    20% {
+        background-color: indianred;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+      background-color: gold;
+    }
+    80% {
+      background-color: yellowgreen;
+    }
+    95% {
+      background-color: green;
+    }
+    100% {
+        background-color: brown;
+    }
+}
+
+/* sticky heading*/
+div.sticky_h {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 3px;
+    background-image: radial-gradient(white, #89CFF0);
+    text-align: right;
+    border: 2px solid #4CAF50;
+    z-index: 100;
+}
+
+
+/* .line_height {
+    line-height: 10%;
+} */
+
+h1 {
+    text-align: center;
+}
+
+/* .readings {
+   float: left;
+}
+
+.sections {
+    float: right;
+} */
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+  
+  /* visited link */
+a:visited {
+    color: green;
+}
+  
+  /* hover link */
+a:hover {
+   color: red;
+     /*change the cursor to the aya adinkra everytime you hover on a link*/
+    /* cursor: url('aya_adinkra.png'), auto; */
+}
+  
+  /* selected link */
+a:active {
+   color: yellow;
+}
+
+.drop-down_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.main_div {
+    text-align: center;
+    position: relative;
+    background-color: #89CFF0;
+    height: 100px;
+    width: 95vw;
+}
+
+.sub_div {
+    position: relative;
+    bottom: 0%;
+}
