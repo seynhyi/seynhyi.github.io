@@ -1,5 +1,6 @@
 html {
-    padding:10px;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
 }
 
 /* background color */
@@ -36,15 +37,15 @@ div.sticky_h {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 3px;
+    padding: 20px;
     background-image: radial-gradient(white, #89CFF0);
-    text-align: right;
+    float: inherit;
     border: 2px solid #4CAF50;
     z-index: 100;
 }
 
-
-/* .line_height {
+/* 
+.line_height {
     line-height: 10%;
 } */
 
@@ -52,13 +53,13 @@ h1 {
     text-align: center;
 }
 
-/* .readings {
+.readings {
    float: left;
 }
 
 .sections {
     float: right;
-} */
+}
 
 /* unvisited link */
 a:link {
@@ -74,7 +75,7 @@ a:visited {
 a:hover {
    color: red;
      /*change the cursor to the aya adinkra everytime you hover on a link*/
-    /* cursor: url('aya_adinkra.png'), auto; */
+    cursor: url('aya_adinkra.png'), auto;
 }
   
   /* selected link */
@@ -87,15 +88,26 @@ a:active {
     display: inline-block;
 }
 
-.main_div {
-    text-align: center;
-    position: relative;
-    background-color: #89CFF0;
-    height: 100px;
-    width: 95vw;
+#menuwrapper {
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+}
+  
+#menuwrapper:hover {
+    height: auto;
+}
+  
+#menuitems a {
+    display: block;
+    width: 100%;
 }
 
-.sub_div {
-    position: relative;
-    bottom: 0%;
+#intro {
+    font-style: italic;
+    /* padding: 10px;
+    background-image: radial-gradient(white, #89CFF0);
+    border: 2px solid #4CAF50; */
+    /* z-index: 100; */
 }
