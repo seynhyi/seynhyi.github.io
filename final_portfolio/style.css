@@ -5,7 +5,7 @@ html {
 
 /* background color */
 body {
-    animation: 10000ms ease-in-out infinite color-change;
+    background-color: #D6C9AF;
 }
   
 @keyframes color-change {
@@ -42,25 +42,45 @@ div.sticky_h {
     float: inherit;
     border: 2px solid #4CAF50;
     z-index: 100;
+    border-radius: 1em;
+    transition: 0.2s;
 }
 
-/* 
-.line_height {
-    line-height: 10%;
-} */
+
+p {
+    line-height: 150%;
+}
 
 h1 {
     text-align: center;
 }
 
+h1:hover,h3:hover {
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: 4000ms ease-in-out infinite color-change;
+    color: transparent;
+}
+
+
 .readings {
    float: left;
 }
 
+.readings:hover {
+    font-size: larger;
+}
 .sections {
     float: right;
 }
 
+.sections:hover{
+    font-size: larger;
+}
+
+h2,h3 {
+    text-align: center;
+}
 /* unvisited link */
 a:link {
     color: white;
@@ -110,4 +130,63 @@ a:active {
     background-image: radial-gradient(white, #89CFF0);
     border: 2px solid #4CAF50; */
     /* z-index: 100; */
+}
+
+#scrollBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer; 
+}
+
+#scrollBtn > .top {
+    display: none; 
+} 
+#scrollBtn.scrollUp > .top { 
+    display: initial;
+ } 
+#scrollBtn.scrollUp > .bottom {  
+    display: none; 
+}
+
+img.size_image {
+    width: 50vw;
+    height: 40vh auto;
+}
+
+#transparency:hover img {
+    opacity: .5;  
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40vh auto;
+    width: 50vw;
+    opacity: 0;
+    transition: .5s ease;;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
