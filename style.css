@@ -1,0 +1,17 @@
+html {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+/* background color */
+body {
+    background-color: black;
+    color: white;
+    
+}
+
+h1 {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+
