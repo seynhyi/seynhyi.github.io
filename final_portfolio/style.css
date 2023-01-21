@@ -49,10 +49,12 @@ div.sticky_h {
 
 p {
     line-height: 150%;
+    font-family: 'Concert One', sans-serif;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Lobster Two', cursive;
 }
 
 h1:hover,h3:hover {
