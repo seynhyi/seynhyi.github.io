@@ -85,15 +85,15 @@ h1{
 }
 .left {
     float: left;
-    margin-left: 3em;
-    margin-top: 0.5em;
-    font-size: 2em;
+    margin-left: 3vw;
+    margin-top: 0.5vh;
+    font-size: 150%;
 }
 .right {
     float: right;
-    margin-right: 3em;
-    margin-top: 0.5em;
-    font-size: 2em;
+    margin-right: 3vh;
+    margin-top: 0.5vh;
+    font-size: 150%;
 }
 
 /* unvisited link */
