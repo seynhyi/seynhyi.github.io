@@ -15,7 +15,7 @@ h1 {
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 12px;
 }
   
   /* Track */
@@ -36,22 +36,23 @@ h1 {
 }
   
 #leftcol {
-    font-family: sans-serif;
-    color: #ffffff;
-    font-size: 3.5em;
+    font-family: 'Karla';
+    color: black;
+    font-size: 2.5em;
     line-height: 1.5em;
     letter-spacing: 0.01em;
     width: calc(50vw - 20px);
     height: 100vh;
     float: left;
-    background: linear-gradient(47deg, rgba(2,0,36,1) 27%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: pink;
+        /*linear-gradient(47deg, rgba(2,0,36,1) 27%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
     background-size: 200%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
   
 #rightcol {
-    font-family: sans-serif;
+    font-family: 'Karla';
     color: #ffffff;
     font-size: 3.5em;
     line-height: 1.7em;
@@ -59,7 +60,8 @@ h1 {
     width: 50vw;
     height: 100vh;
     float: right;
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: brown;
+        /*linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
     overflow-x: hidden;
     overflow-y: scroll;
     background-size: 200%;
